@@ -30,8 +30,10 @@ inicial.mainloop()
 #pasta nome arquivo
 #copiar embaixo de texto
 #ctrl z, tab
-#config voz
-#adicionar +1 em final nome caso exista
+#config:
+# voz (pessoa de voz, similaridade)
+#adicionar opcional +1 em final nome caso exista ou substituir
+#Adicionar diretorio em config
 
 
 #WK 797ccf834e6e157ff1354554b2e93f12
@@ -40,6 +42,7 @@ inicial.mainloop()
 #Y= CIMA/BAIXO
 #X= DIREITA ESQUERDA
 
+#pip install pyinstaller
 #pyinstaller --onefile main.py
 
 
