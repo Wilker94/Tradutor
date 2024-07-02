@@ -17,7 +17,8 @@ def checkbox_selecionada(translate_portugues, translate_portugues_text, translat
                          translate_romeno, translate_romeno_text, translate_turco, translate_turco_text,
                          translate_russo, translate_russo_text, translate_ucraniano, translate_ucraniano_text,
                          translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-                         translate_hindi, translate_hindi_text, contador_num):
+                         translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, 
+                         translate_chines, translate_chines_text, contador_num):
    
       
         #contador = contador_num.get("1.0", tk.END)  # Obtém o texto digitado na ScrolledText
@@ -72,9 +73,6 @@ def checkbox_selecionada(translate_portugues, translate_portugues_text, translat
         if translate_grego.get():
             idiomas_selecionados.append(translate_grego_text.cget('text').strip())
         
-        """if translate_hebraico.get():
-            idiomas_selecionados.append(translate_hebraico_text.cget('text').strip())"""
-        
         if translate_lituano.get():
               idiomas_selecionados.append(translate_lituano_text.cget('text').strip())
         
@@ -83,8 +81,6 @@ def checkbox_selecionada(translate_portugues, translate_portugues_text, translat
         
         if translate_hindi.get():
               idiomas_selecionados.append(translate_hindi_text.cget('text').strip())
-        """if translate_chines.get():
-              idiomas_selecionados.append(translate_chines_text.cget('text').strip())"""
         
         if translate_vietnam.get():
               idiomas_selecionados.append(translate_vietnam_text.cget('text').strip())
@@ -124,6 +120,12 @@ def checkbox_selecionada(translate_portugues, translate_portugues_text, translat
         
         if translate_urdu.get():
               idiomas_selecionados.append(translate_urdu_text.cget('text').strip())
+              
+        if translate_hebraico.get():
+            idiomas_selecionados.append(translate_hebraico_text.cget('text').strip())
+            
+        if translate_chines.get():
+            idiomas_selecionados.append(translate_chines_text.cget('text').strip())
         
 
 

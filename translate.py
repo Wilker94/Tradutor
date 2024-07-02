@@ -4,6 +4,18 @@ import tkinter as tk
 
 #Wonka1 be00df312290494f3d432b0af6f9bc6c
 
+#from googletrans import Translator
+
+"""def traduz_bugados(translate_chines_label, translate_chines_text, checkbox_chines, translate_hebraico_label, translate_hebraico_text, checkbox_hebraico, texto_traducao_input):
+    
+    textos = texto_traducao_input.get("1.0", tk.END)  # Obtém o texto digitado na ScrolledText       
+    # Instanciando o objeto Translator"""
+
+    
+
+
+
+
 def traduz_texto(texto_traducao_input, checkbox_portugues, translate_portugues_label, translate_portugues_text, 
                  checkbox_ingles, translate_ingles_label, translate_ingles_text, checkbox_espanhol, translate_espanhol_label, translate_espanhol_text, 
                  checkbox_frances, translate_frances_label, translate_frances_text, checkbox_alemao, translate_alemao_label, translate_alemao_text,
@@ -19,10 +31,12 @@ def traduz_texto(texto_traducao_input, checkbox_portugues, translate_portugues_l
                  checkbox_tcheco, translate_tcheco_label, translate_tcheco_text, checkbox_romeno, translate_romeno_label, translate_romeno_text,
                  checkbox_turco, translate_turco_label, translate_turco_text, checkbox_russo, translate_russo_label, translate_russo_text,
                  checkbox_ucraniano, translate_ucraniano_label, translate_ucraniano_text, checkbox_malaio, translate_malaio_label, translate_malaio_text,
-                 checkbox_urdu, translate_urdu_label, translate_urdu_text, checkbox_hindi, translate_hindi_label, translate_hindi_text):
+                 checkbox_urdu, translate_urdu_label, translate_urdu_text, checkbox_hindi, translate_hindi_label, translate_hindi_text,
+                 checkbox_hebraico, translate_hebraico_label, translate_hebraico_text, checkbox_chines, translate_chines_label, translate_chines_text):
        
         
-    textos = texto_traducao_input.get("1.0", tk.END)  # Obtém o texto digitado na ScrolledText       
+    textos = texto_traducao_input.get("1.0", tk.END)  # Obtém o texto digitado na ScrolledText   
+    #translator2 = Translator()    
     
     translate_portugues_label.config(text="Português")
     checkbox_portugues.grid(row=6, column=0, padx=(10,0), pady=0, sticky=tk.W)
@@ -125,14 +139,7 @@ def traduz_texto(texto_traducao_input, checkbox_portugues, translate_portugues_l
     translator = GoogleTranslator(source='auto', target='el')
     translation = translator.translate(textos)
     translate_grego_text.config(text=translation)
-    
-    """# Hebraico
-    translate_hebraico_label.config(text="Hebraico")
-    checkbox_hebraico.grid(row=10, column=6, padx=(10,0), pady=0, sticky=tk.W)
-    translator = GoogleTranslator(source='auto', target='he')
-    translation = translator.translate(textos)
-    translate_hebraico_text.config(text=translation)"""
-    
+      
     # Urdu
     translate_urdu_label.config(text="Urdu")
     checkbox_urdu.grid(row=10, column=6, padx=(10,0), pady=0, sticky=tk.W)
@@ -153,13 +160,6 @@ def traduz_texto(texto_traducao_input, checkbox_portugues, translate_portugues_l
     translator = GoogleTranslator(source='auto', target='th')
     translation = translator.translate(textos)
     translate_tailandes_text.config(text=translation)
-    
-    # Chinês
-    """translate_chines_label.config(text="Chinês")
-    checkbox_chines.grid(row=12, column=0, padx=(10,0), pady=0, sticky=tk.W)
-    translator = GoogleTranslator(source='auto', target='zh')
-    translation = translator.translate(textos)
-    translate_chines_text.config(text=translation)"""
     
     # Híndi
     translate_hindi_label.config(text="Híndi")
@@ -251,7 +251,30 @@ def traduz_texto(texto_traducao_input, checkbox_portugues, translate_portugues_l
     translator = GoogleTranslator(source='auto', target='ms')
     translation = translator.translate(textos)
     translate_malaio_text.config(text=translation)
+       
+    """translate_hebraico_label.config(text="Hebraico")
+    checkbox_hebraico.grid(row=16, column=2, padx=(10,0), pady=0, sticky=tk.W)
+    translation2 = translator2.translate(textos, dest='he').text
+    translate_hebraico_text.config(text=translation2)
     
-
+    translate_chines_label.config(text="Chinês Tradicional")
+    checkbox_chines.grid(row=16, column=4, padx=(10,0), pady=0, sticky=tk.W)
+    translation2 = translator2.translate(textos, dest='zh-tw').text
+    translate_chines_text.config(text=translation2)"""
+    
+        # Malaio
+    translate_hebraico_label.config(text="Hebraico")
+    checkbox_hebraico.grid(row=16, column=2, padx=(10,0), pady=0, sticky=tk.W)
+    translator = GoogleTranslator(source='auto', target='iw')
+    translation = translator.translate(textos)
+    translate_hebraico_text.config(text=translation)
+    
+        # Malaio
+    translate_chines_label.config(text="Chinês")
+    checkbox_chines.grid(row=16, column=4, padx=(10,0), pady=0, sticky=tk.W)
+    translator = GoogleTranslator(source='auto', target='chinese (traditional)')
+    translation = translator.translate(textos)
+    translate_chines_text.config(text=translation)
+    
     
 

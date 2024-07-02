@@ -116,7 +116,9 @@ def baixa_audio(api_input, translate_portugues, translate_portugues_text, transl
                 translate_turco, translate_turco_text, translate_turco_label,
                 translate_russo, translate_russo_text, translate_russo_label,
                 translate_ucraniano, translate_ucraniano_text, translate_ucraniano_label,
-                translate_malaio, translate_malaio_text, translate_malaio_label):
+                translate_malaio, translate_malaio_text, translate_malaio_label, 
+                translate_hebraico, translate_hebraico_text, translate_hebraico_label, 
+                translate_chines, translate_chines_text, translate_chines_label):
  
  # Obtém a API inserida pelo usuário
     api = api_input.get("1.0", tk.END).strip()
@@ -159,7 +161,9 @@ def baixa_audio(api_input, translate_portugues, translate_portugues_text, transl
             "Turco": (translate_turco, translate_turco_text, translate_turco_label),
             "Russo": (translate_russo, translate_russo_text, translate_russo_label),
             "Ucraniano": (translate_ucraniano, translate_ucraniano_text, translate_ucraniano_label),
-            "Malaio": (translate_malaio, translate_malaio_text, translate_malaio_label)
+            "Malaio": (translate_malaio, translate_malaio_text, translate_malaio_label),
+            "Hebraico": (translate_hebraico, translate_hebraico_text, translate_hebraico_label),
+            "Chinês": (translate_chines, translate_chines_text, translate_chines_label),
         }
     
         # Para cada idioma selecionado, verifica se está marcado e, se sim, realiza o download do áudio

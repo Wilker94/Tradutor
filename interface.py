@@ -130,7 +130,8 @@ def telas (tela):
                  checkbox_tcheco, translate_tcheco_label, translate_tcheco_text, checkbox_romeno, translate_romeno_label, translate_romeno_text,
                  checkbox_turco, translate_turco_label, translate_turco_text, checkbox_russo, translate_russo_label, translate_russo_text,
                  checkbox_ucraniano, translate_ucraniano_label, translate_ucraniano_text, checkbox_malaio, translate_malaio_label, translate_malaio_text,
-                 checkbox_urdu, translate_urdu_label, translate_urdu_text, checkbox_hindi, translate_hindi_label, translate_hindi_text))
+                 checkbox_urdu, translate_urdu_label, translate_urdu_text, checkbox_hindi, translate_hindi_label, translate_hindi_text, checkbox_hebraico, 
+                 translate_hebraico_label, translate_hebraico_text, checkbox_chines, translate_chines_label, translate_chines_text))
             translate_button.grid(row=2, column=2, padx=15, pady=2, sticky=tk.E)
           
             #Botão Baixar Audio
@@ -165,7 +166,9 @@ def telas (tela):
                                         translate_turco, translate_turco_text, translate_turco_label,
                                         translate_russo, translate_russo_text, translate_russo_label,
                                         translate_ucraniano, translate_ucraniano_text, translate_ucraniano_label,
-                                        translate_malaio, translate_malaio_text, translate_malaio_label))
+                                        translate_malaio, translate_malaio_text, translate_malaio_label,
+                                        translate_hebraico, translate_hebraico_text, translate_hebraico_label, 
+                                        translate_chines, translate_chines_text, translate_chines_label))
             translate_button.grid(row=0, rowspan=3, column=3, padx=(20,0), pady=2)
         
             #Botão Configuração
@@ -223,7 +226,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_portugues = tk.Checkbutton(frame_textos, variable=translate_portugues)
             checkbox_portugues.grid(row=6, column=0, padx=(10,0), pady=0, sticky=tk.W)
             translate_portugues_label = tk.Label(frame_textos, text="")
@@ -243,7 +246,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_ingles = tk.Checkbutton(frame_textos, variable=translate_ingles)
             checkbox_ingles.grid(row=6, column=2, padx=(10,0), pady=0, sticky=tk.W)
             translate_ingles_label = tk.Label(frame_textos, text="")
@@ -263,7 +266,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_espanhol = tk.Checkbutton(frame_textos, variable=translate_espanhol)
             checkbox_espanhol.grid(row=6, column=4, padx=(10,0), pady=0, sticky=tk.W)
             translate_espanhol_label = tk.Label(frame_textos, text="")
@@ -283,7 +286,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_frances = tk.Checkbutton(frame_textos, variable=translate_frances)
             checkbox_frances.grid(row=6, column=6, padx=(10,0), pady=0, sticky=tk.W)
             translate_frances_label = tk.Label(frame_textos, text="")
@@ -303,7 +306,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_alemao = tk.Checkbutton(frame_textos, variable=translate_alemao)
             checkbox_alemao.grid(row=6, column=8, padx=(10,0), pady=0, sticky=tk.W)
             translate_alemao_label = tk.Label(frame_textos, text="")
@@ -323,7 +326,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_italiano = tk.Checkbutton(frame_textos, variable=translate_italiano)
             checkbox_italiano.grid(row=6, column=10, padx=(10,0), pady=0, sticky=tk.W)
             translate_italiano_label = tk.Label(frame_textos, text="")
@@ -360,7 +363,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_arabe = tk.Checkbutton(frame_textos, variable=translate_arabe)
             checkbox_arabe.grid(row=8, column=0, padx=(10,0), pady=0, sticky=tk.W)
             translate_arabe_label = tk.Label(frame_textos, text="")
@@ -380,7 +383,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_holandes = tk.Checkbutton(frame_textos, variable=translate_holandes)
             checkbox_holandes.grid(row=8, column=2, padx=(10,0), pady=0, sticky=tk.W)
             translate_holandes_label = tk.Label(frame_textos, text="")
@@ -400,7 +403,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_polones = tk.Checkbutton(frame_textos, variable=translate_polones)
             checkbox_polones.grid(row=8, column=4, padx=(10,0), pady=0, sticky=tk.W)
             translate_polones_label = tk.Label(frame_textos, text="")
@@ -420,7 +423,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_bulgaro = tk.Checkbutton(frame_textos, variable=translate_bulgaro)
             checkbox_bulgaro.grid(row=8, column=6, padx=(10,0), pady=0, sticky=tk.W)
             translate_bulgaro_label = tk.Label(frame_textos, text="")
@@ -440,7 +443,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_croata = tk.Checkbutton(frame_textos, variable=translate_croata)
             checkbox_croata.grid(row=8, column=8, padx=(10,0), pady=0, sticky=tk.W)
             translate_croata_label = tk.Label(frame_textos, text="")
@@ -460,7 +463,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_esloveno = tk.Checkbutton(frame_textos, variable=translate_esloveno)
             checkbox_esloveno.grid(row=8, column=10, padx=(10,0), pady=0, sticky=tk.W)
             translate_esloveno_label = tk.Label(frame_textos, text="")
@@ -495,7 +498,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_eslovaco = tk.Checkbutton(frame_textos, variable=translate_eslovaco)
             checkbox_eslovaco.grid(row=10, column=0, padx=(10,0), pady=0, sticky=tk.W)
             translate_eslovaco_label = tk.Label(frame_textos, text="")
@@ -515,7 +518,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_filipino = tk.Checkbutton(frame_textos, variable=translate_filipino)
             checkbox_filipino.grid(row=10, column=2, padx=(10,0), pady=0, sticky=tk.W)
             translate_filipino_label = tk.Label(frame_textos, text="")
@@ -534,32 +537,14 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_grego = tk.Checkbutton(frame_textos, variable=translate_grego)
             checkbox_grego.grid(row=10, column=4, padx=(10,0), pady=0, sticky=tk.W)
             translate_grego_label = tk.Label(frame_textos, text="")
             translate_grego_label.grid(row=10, column=5, padx=(0,0), pady=2, sticky=tk.W)
             translate_grego_text = tk.Label(frame_textos, text="", wraplength=120, width=22)
             translate_grego_text.grid(row=11, column=4, columnspan=2, padx=(10,0), pady=(2,30), sticky=tk.W)              
-            """# Hebraico
-            translate_hebraico = tk.BooleanVar(frame_textos)
-            translate_hebraico.trace_add("write", lambda *args: checkbox_selecionada(translate_portugues, translate_portugues_text,
-            translate_ingles, translate_ingles_text, translate_espanhol, translate_espanhol_text, translate_frances, translate_frances_text,
-            translate_alemao, translate_alemao_text, translate_italiano, translate_italiano_text, translate_arabe, translate_arabe_text, 
-            translate_holandes, translate_holandes_text, translate_polones, translate_polones_text, translate_bulgaro, translate_bulgaro_text, 
-            translate_croata, translate_croata_text, translate_esloveno, translate_esloveno_text, translate_eslovaco, translate_eslovaco_text, 
-            translate_filipino, translate_filipino_text, translate_grego, translate_grego_text, translate_lituano, translate_lituano_text, translate_tailandes,
-            translate_tailandes_text, translate_vietnam, translate_vietnam_text, translate_bengali, translate_bengali_text, translate_hungaro, translate_hungaro_text,
-            translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
-            translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
-            translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
-            checkbox_hebraico = tk.Checkbutton(frame_textos, variable=translate_hebraico)
-            checkbox_hebraico.grid(row=10, column=6, padx=(10,0), pady=0, sticky=tk.W)
-            translate_hebraico_label = tk.Label(frame_textos, text="")
-            translate_hebraico_label.grid(row=10, column=7, padx=(0,0), pady=2, sticky=tk.W)
-            translate_hebraico_text = tk.Label(frame_textos, text="", wraplength=120, width=22)
-            translate_hebraico_text.grid(row=11, column=6, columnspan=2, padx=(10,0), pady=(2,30), sticky=tk.W)"""  
+
             
             
             # Urdu
@@ -574,7 +559,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_urdu = tk.Checkbutton(frame_textos, variable=translate_urdu)
             checkbox_urdu.grid(row=10, column=6, padx=(10,0), pady=0, sticky=tk.W)
             translate_urdu_label = tk.Label(frame_textos, text="")
@@ -597,7 +582,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_lituano = tk.Checkbutton(frame_textos, variable=translate_lituano)
             checkbox_lituano.grid(row=10, column=8, padx=(10,0), pady=0, sticky=tk.W)
             translate_lituano_label = tk.Label(frame_textos, text="")
@@ -616,7 +601,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_tailandes = tk.Checkbutton(frame_textos, variable=translate_tailandes)
             checkbox_tailandes.grid(row=10, column=10, padx=(10,0), pady=0, sticky=tk.W)
             translate_tailandes_label = tk.Label(frame_textos, text="")
@@ -639,25 +624,8 @@ def telas (tela):
             global translate_hungaro, checkbox_hungaro, translate_hungaro_label, translate_hungaro_text
             global translate_indonesio, checkbox_indonesio, translate_indonesio_label, translate_indonesio_text
             global translate_sueco, checkbox_sueco, translate_sueco_label, translate_sueco_text       
-            # Chinês
-            """translate_chines = tk.BooleanVar(frame_textos)
-            translate_chines.trace_add("write", lambda *args: checkbox_selecionada(translate_portugues, translate_portugues_text,
-            translate_ingles, translate_ingles_text, translate_espanhol, translate_espanhol_text, translate_frances, translate_frances_text,
-            translate_alemao, translate_alemao_text, translate_italiano, translate_italiano_text, translate_arabe, translate_arabe_text, 
-            translate_holandes, translate_holandes_text, translate_polones, translate_polones_text, translate_bulgaro, translate_bulgaro_text, 
-            translate_croata, translate_croata_text, translate_esloveno, translate_esloveno_text, translate_eslovaco, translate_eslovaco_text, 
-            translate_filipino, translate_filipino_text, translate_grego, translate_grego_text, translate_lituano, translate_lituano_text, translate_tailandes,
-            translate_tailandes_text, translate_vietnam, translate_vietnam_text, translate_bengali, translate_bengali_text, translate_hungaro, translate_hungaro_text,
-            translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
-            translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
-            translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
-            checkbox_chines = tk.Checkbutton(frame_textos, variable=translate_chines)
-            checkbox_chines.grid(row=12, column=0, padx=(10,0), pady=0, sticky=tk.W)
-            translate_chines_label = tk.Label(frame_textos, text="")
-            translate_chines_label.grid(row=12, column=1, padx=(0,0), pady=2, sticky=tk.W)
-            translate_chines_text = tk.Label(frame_textos, text="", wraplength=120, width=22)
-            translate_chines_text.grid(row=13, column=0, columnspan=2, padx=(10,0), pady=(2,30), sticky=tk.W)"""
+            
+            
             # Vietnamita
             
                                 
@@ -674,7 +642,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_hindi = tk.Checkbutton(frame_textos, variable=translate_hindi)
             checkbox_hindi.grid(row=12, column=0, padx=(10,0), pady=0, sticky=tk.W)
             translate_hindi_label = tk.Label(frame_textos, text="")
@@ -695,7 +663,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_vietnam = tk.Checkbutton(frame_textos, variable=translate_vietnam)
             checkbox_vietnam.grid(row=12, column=2, padx=(10,0), pady=0, sticky=tk.W)
             translate_vietnam_label = tk.Label(frame_textos, text="")
@@ -714,7 +682,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_bengali = tk.Checkbutton(frame_textos, variable=translate_bengali)
             checkbox_bengali.grid(row=12, column=4, padx=(10,0), pady=0, sticky=tk.W)
             translate_bengali_label = tk.Label(frame_textos, text="")
@@ -733,7 +701,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_hungaro = tk.Checkbutton(frame_textos, variable=translate_hungaro)
             checkbox_hungaro.grid(row=12, column=6, padx=(10,0), pady=0, sticky=tk.W)
             translate_hungaro_label = tk.Label(frame_textos, text="")
@@ -752,7 +720,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_indonesio = tk.Checkbutton(frame_textos, variable=translate_indonesio)
             checkbox_indonesio.grid(row=12, column=8, padx=(10,0), pady=0, sticky=tk.W)
             translate_indonesio_label = tk.Label(frame_textos, text="")
@@ -771,7 +739,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_sueco = tk.Checkbutton(frame_textos, variable=translate_sueco)
             checkbox_sueco.grid(row=12, column=10, padx=(10,0), pady=0, sticky=tk.W)
             translate_sueco_label = tk.Label(frame_textos, text="")
@@ -807,7 +775,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_servio = tk.Checkbutton(frame_textos, variable=translate_servio)
             checkbox_servio.grid(row=14, column=0, padx=(10,0), pady=0, sticky=tk.W)
             translate_servio_label = tk.Label(frame_textos, text="")
@@ -827,7 +795,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_tcheco = tk.Checkbutton(frame_textos, variable=translate_tcheco)
             checkbox_tcheco.grid(row=14, column=2, padx=(10,0), pady=0, sticky=tk.W)
             translate_tcheco_label = tk.Label(frame_textos, text="")
@@ -847,7 +815,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_romeno = tk.Checkbutton(frame_textos, variable=translate_romeno)
             checkbox_romeno.grid(row=14, column=4, padx=(10,0), pady=0, sticky=tk.W)
             translate_romeno_label = tk.Label(frame_textos, text="")
@@ -867,7 +835,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_turco = tk.Checkbutton(frame_textos, variable=translate_turco)
             checkbox_turco.grid(row=14, column=6, padx=(10,0), pady=0, sticky=tk.W)
             translate_turco_label = tk.Label(frame_textos, text="")
@@ -887,7 +855,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_russo = tk.Checkbutton(frame_textos, variable=translate_russo)
             checkbox_russo.grid(row=14, column=8, padx=(10,0), pady=0, sticky=tk.W)
             translate_russo_label = tk.Label(frame_textos, text="")
@@ -907,7 +875,7 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_ucraniano = tk.Checkbutton(frame_textos, variable=translate_ucraniano)
             checkbox_ucraniano.grid(row=14, column=10, padx=(10,0), pady=0, sticky=tk.W)
             translate_ucraniano_label = tk.Label(frame_textos, text="")
@@ -925,7 +893,8 @@ def telas (tela):
             
         def linha_seis():
             global translate_malaio, checkbox_malaio, translate_malaio_label, translate_malaio_text
-
+            global translate_hebraico, checkbox_hebraico, translate_hebraico_label, translate_hebraico_text
+            global translate_chines, checkbox_chines, translate_chines_label, translate_chines_text
         
             # Malaio
             translate_malaio = tk.BooleanVar(frame_textos)
@@ -939,17 +908,57 @@ def telas (tela):
             translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
             translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
             translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
-            translate_hindi, translate_hindi_text, contador_num))
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
             checkbox_malaio = tk.Checkbutton(frame_textos, variable=translate_malaio)
             checkbox_malaio.grid(row=16, column=0, padx=(10,0), pady=0, sticky=tk.W)
             translate_malaio_label = tk.Label(frame_textos, text="")
             translate_malaio_label.grid(row=16, column=1, padx=(0,0), pady=2, sticky=tk.W)
             translate_malaio_text = tk.Label(frame_textos, text="", wraplength=120, width=22)
             translate_malaio_text.grid(row=17, column=0, columnspan=2, padx=(10,0), pady=(2,30), sticky=tk.W)
+            
+            # Hebraico
+            translate_hebraico = tk.BooleanVar(frame_textos)
+            translate_hebraico.trace_add("write", lambda *args: checkbox_selecionada(translate_portugues, translate_portugues_text,
+            translate_ingles, translate_ingles_text, translate_espanhol, translate_espanhol_text, translate_frances, translate_frances_text,
+            translate_alemao, translate_alemao_text, translate_italiano, translate_italiano_text, translate_arabe, translate_arabe_text, 
+            translate_holandes, translate_holandes_text, translate_polones, translate_polones_text, translate_bulgaro, translate_bulgaro_text, 
+            translate_croata, translate_croata_text, translate_esloveno, translate_esloveno_text, translate_eslovaco, translate_eslovaco_text, 
+            translate_filipino, translate_filipino_text, translate_grego, translate_grego_text, translate_lituano, translate_lituano_text, translate_tailandes,
+            translate_tailandes_text, translate_vietnam, translate_vietnam_text, translate_bengali, translate_bengali_text, translate_hungaro, translate_hungaro_text,
+            translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
+            translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
+            translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
+            checkbox_hebraico = tk.Checkbutton(frame_textos, variable=translate_hebraico)
+            checkbox_hebraico.grid(row=16, column=2, padx=(10,0), pady=0, sticky=tk.W)
+            translate_hebraico_label = tk.Label(frame_textos, text="")
+            translate_hebraico_label.grid(row=16, column=3, padx=(0,0), pady=2, sticky=tk.W)
+            translate_hebraico_text = tk.Label(frame_textos, text="", wraplength=120, width=22)
+            translate_hebraico_text.grid(row=17, column=2, columnspan=2, padx=(10,0), pady=(2,30), sticky=tk.W)  
+            
+            # Chinês
+            translate_chines = tk.BooleanVar(frame_textos)
+            translate_chines.trace_add("write", lambda *args: checkbox_selecionada(translate_portugues, translate_portugues_text,
+            translate_ingles, translate_ingles_text, translate_espanhol, translate_espanhol_text, translate_frances, translate_frances_text,
+            translate_alemao, translate_alemao_text, translate_italiano, translate_italiano_text, translate_arabe, translate_arabe_text, 
+            translate_holandes, translate_holandes_text, translate_polones, translate_polones_text, translate_bulgaro, translate_bulgaro_text, 
+            translate_croata, translate_croata_text, translate_esloveno, translate_esloveno_text, translate_eslovaco, translate_eslovaco_text, 
+            translate_filipino, translate_filipino_text, translate_grego, translate_grego_text, translate_lituano, translate_lituano_text, translate_tailandes,
+            translate_tailandes_text, translate_vietnam, translate_vietnam_text, translate_bengali, translate_bengali_text, translate_hungaro, translate_hungaro_text,
+            translate_indonesio, translate_indonesio_text, translate_sueco, translate_sueco_text, translate_servio, translate_servio_text,
+            translate_tcheco, translate_tcheco_text, translate_romeno, translate_romeno_text, translate_turco, translate_turco_text, translate_russo,
+            translate_russo_text, translate_ucraniano, translate_ucraniano_text, translate_malaio, translate_malaio_text, translate_urdu, translate_urdu_text,
+            translate_hindi, translate_hindi_text, translate_hebraico, translate_hebraico_text, translate_chines, translate_chines_text, contador_num))
+            checkbox_chines = tk.Checkbutton(frame_textos, variable=translate_chines)
+            checkbox_chines.grid(row=16, column=4, padx=(10,0), pady=0, sticky=tk.W)
+            translate_chines_label = tk.Label(frame_textos, text="")
+            translate_chines_label.grid(row=16, column=5, padx=(0,0), pady=2, sticky=tk.W)
+            translate_chines_text = tk.Label(frame_textos, text="", wraplength=120, width=22)
+            translate_chines_text.grid(row=17, column=4, columnspan=2, padx=(10,0), pady=(2,30), sticky=tk.W)
         
             checkbox_malaio.grid_remove()            
-
-
+            checkbox_hebraico.grid_remove()          
+            checkbox_chines.grid_remove()          
 
         linha_um()
         linha_dois()
