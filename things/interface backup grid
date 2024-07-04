@@ -1,0 +1,168 @@
+import tkinter as tk
+from tkinter import scrolledtext, messagebox
+from translate import translate_text
+
+
+#797ccf834e6e157ff1354554b2e93f12
+
+
+     
+def teste():
+    print("oi")
+
+
+inicial = tk.Tk()
+inicial.title("Tradutor de Texto")
+inicial.geometry("1200x600")
+
+
+
+# Contador de caracteres
+chat_topo = tk.Label(inicial, text="Contador:")
+chat_topo.grid(row=0, column=0, columnspan=8, padx=10, pady=10, sticky=tk.NE)
+
+# Campo de entrada para a API elevenlabs
+api_eleven = tk.Text(inicial, text="Digite a API do Elevenlabs:")
+api_eleven.grid(row=1, column=0, columnspan=8, padx=10, pady=(10, 0), sticky=tk.W)
+
+texto = tk.Text(root, height=10, width=40)
+texto.pack()
+
+
+api_input = tk.Label(inicial, width=32, height=0)
+api_input.grid(row=2, column=0, columnspan=8, padx=10, pady=(0, 10), sticky=tk.W)
+#api_input.bind("<Tab>", focus_next_widget)
+
+# Titulo da solicitação de texto
+texto_traducao = tk.Label(inicial, text="Digite o texto que deseja traduzir:")
+texto_traducao.grid(row=3, column=0, columnspan=20, padx=10, pady=(10, 0), sticky=tk.W)
+
+
+
+#campo de solicitação de texto
+texto_traducao_input = scrolledtext.ScrolledText(inicial, width=60, height=5, wrap=tk.WORD)
+texto_traducao_input.grid(row=4, column=0, columnspan=20, padx=10, pady=(0, 10), sticky=tk.W)
+#texto_traducao.bind("<Tab>", focus_next_widget)
+
+
+
+# Botão para traduzir o texto
+translate_button = tk.Button(inicial, text="Traduzir", command=teste)
+translate_button.grid(row=5, column=0, padx=10, pady=(10, 0), sticky=tk.W)
+
+
+
+"""
+if not input_text:
+        messagebox.showwarning("Aviso", "Por favor, insira o texto a ser traduzido.")
+        return  """
+
+   
+    
+
+
+
+"""
+# Espanhol
+translate_spanish = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=8, column=0)
+checkbox_spanish = tk.Checkbutton(inicial, variable=translate_spanish)
+checkbox_spanish.grid(row=8, column=2, padx=(5,0), pady=10, sticky=tk.SW)
+translate_spanish_label = tk.Label(inicial, text="Espanhol:", wraplength=280)
+translate_spanish_label.grid(row=8, column=2, padx=(25,0), pady=2, sticky=tk.W)
+translate_spanish_text = tk.Label(inicial, wraplength=280)
+translate_spanish_text.grid(row=9, column=2, padx=(5,0), pady=2, sticky=tk.W)
+
+
+
+# Francês
+translate_french = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=8, column=0)
+checkbox_french = tk.Checkbutton(inicial, variable=translate_french)
+checkbox_french.grid(row=8, column=4, padx=(5,0), pady=10, sticky=tk.SW)
+translate_french_label = tk.Label(inicial, text="Francês:", wraplength=280)
+translate_french_label.grid(row=8, column=4, padx=(25,0), pady=2, sticky=tk.W)
+translate_french_text = tk.Label(inicial, wraplength=280)
+translate_french_text.grid(row=9, column=4, padx=(5,0), pady=2, sticky=tk.W)
+
+
+# Português
+translate_portuguese = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=12, column=0)
+checkbox_portuguese = tk.Checkbutton(inicial, variable=translate_portuguese)
+checkbox_portuguese.grid(row=12, column=4, padx=(5,0), pady=10, sticky=tk.SW)
+translate_portuguese_label = tk.Label(inicial, text="Português:", wraplength=280)
+translate_portuguese_label.grid(row=12, column=4, padx=(25,0), pady=2, sticky=tk.W)
+translate_portuguese_text = tk.Label(inicial, wraplength=280)
+translate_portuguese_text.grid(row=13, column=4, padx=(5,0), pady=2, sticky=tk.W)
+
+
+
+
+
+
+
+# Espanhol
+checkbox_spanish.grid_remove()
+translate_spanish_label.grid_remove()
+translate_spanish_text.grid_remove()
+
+
+# Francês
+checkbox_french.grid_remove()
+translate_french_label.grid_remove()
+translate_french_text.grid_remove()
+
+
+# Português
+checkbox_portuguese.grid_remove()
+translate_portuguese_label.grid_remove()
+translate_portuguese_text.grid_remove()
+
+
+
+
+
+
+#verificar se checkbox está marcada
+def on_checkbox_toggle(*args):
+    input_pt = tk.StringVar()
+    input_es = tk.StringVar()
+    input = tk.StringVar()
+    
+    
+    input_pt = translate_portuguese.get("1.0", tk.END).strip()
+        
+    input_es = translate_spanish.get("1.0", tk.END).strip()
+        
+    input_fr = translate_french.get("1.0", tk.END).strip()
+        
+    
+"""
+
+
+
+
+inicial.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

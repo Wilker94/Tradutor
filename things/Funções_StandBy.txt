@@ -1,0 +1,74 @@
+            #print(f"Próximo reset de contagem de caracteres: {data_reset}")
+    
+    
+    """def voz():
+    
+        api = ("be00df312290494f3d432b0af6f9bc6c")
+    
+        client = ElevenLabs(api_key=api)
+
+        voices = client.voices.get_all()
+        
+        for voice in voices:
+            print(f"ID: {voice.id}, Nome: {voice.name}")"""
+            
+    """def voz():
+        api_key = "be00df312290494f3d432b0af6f9bc6c"  # Substitua pelo valor real da sua chave de API
+        url = "https://api.elevenlabs.io/v1/voices"
+    
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        }
+    
+        response = requests.get(url, headers=headers)
+    
+        if response.status_code == 200:
+            voices = response.json().get("voices", [])
+            for voice in voices:
+                print(f"ID: {voice['id']}, Nome: {voice['name']}")
+        else:
+            print(f"Erro: {response.status_code}, Mensagem: {response.text}")"""
+
+
+               """def cria_audio():
+        
+        
+        api = api_input.get("1.0", tk.END).strip()  # Obtém o texto digitado na ScrolledText
+        pt = texto_traducao_input.get("1.0", tk.END).strip()  # Obtém o texto digitado na ScrolledText
+        save_filename = translate_portugues_label.cget("text").strip() + ".mp3"  # Obtém o texto do Label em extensão mp3 no final
+        
+        #idioma = translate_portugues_label.get("1.0", tk.END).strip()  # Obtém o texto digitado na ScrolledText
+        #print(idioma)
+
+        eleven(api,pt, save_filename)"""
+        
+    
+    if not input_text:
+        messagebox.showwarning("Aviso", "Por favor, insira o texto a ser traduzido.")
+        return  """
+
+
+
+    """def vincula_api():      
+
+        api_key = api_input.get("1.0", tk.END).strip()  # Obtém o texto digitado na ScrolledText
+        caracteres_get, data_reset = get_eleven(api_key)  # Chama a função get_eleven
+        if caracteres_get is not None:
+            print(caracteres_get, data_reset)
+            # Aqui você pode atualizar componentes da interface conforme necessário
+        else:
+            messagebox.showerror("Erro", "Erro ao acessar API do ElevenLabs ou dados inválidos.")
+            
+        caracteres_faltantes.config(text=f"Caracteres restantes: {caracteres_get}")
+        caracteres_faltantes.grid(row=0, column=0, padx=(10,0), pady=10, sticky=tk.E)
+        data_renova.config(text=f"Próximo reset: {data_reset}")
+        data_renova.grid(row=0, column=2, padx=0, pady=0, sticky=tk.E)"""
+
+
+
+        
+"""def translate_text(text, language):
+    translator = GoogleTranslator(source='auto', target=language)
+    translation = translator.translate(text)
+    return translation"""

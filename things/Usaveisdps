@@ -1,0 +1,134 @@
+
+
+
+
+
+
+"""# Função de callback para a checkbox
+def on_checkbox_toggle(*args):
+    if translate_german.get():
+        update_char_count()
+    if translate_french.get():
+        update_char_count()
+    if translate_spanish.get():
+        update_char_count()
+    if translate_italian.get():
+        update_char_count()
+
+# Adicionando o trace para monitorar mudanças no estado da checkbox
+translate_german.trace_add("write", on_checkbox_toggle)
+translate_french.trace_add("write", on_checkbox_toggle)
+translate_spanish.trace_add("write", on_checkbox_toggle)
+translate_italian.trace_add("write", on_checkbox_toggle)"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#antes do inicial.mainloop
+#api_input.focus()
+#inicial.bind_all("<Shift-Tab>", lambda e: e.widget.tk_focusPrev().focus_set())
+
+
+
+
+
+
+
+
+"""def tradutor():
+        
+           
+
+        translations = translate_text(texto_traducao)
+        translated_german = translations['de']
+        # Exibir texto traduzido para Alemão
+        
+        translate_to_german_var = tk.BooleanVar()
+        translate_to_german_checkbox = tk.Checkbutton(inicial, variable=translate_to_german_var)
+        translate_to_german_checkbox.grid(row=6, column=1, padx=10, pady=(10, 0), sticky=tk.W)
+        translated_german_label = tk.Label(inicial, text="Alemão:", wraplength=280)
+        translated_german_label.grid(row=6, column=0, padx=10, pady=(10, 0), sticky=tk.W)
+        translated_german_text = tk.Label(inicial, text=translated_german, wraplength=280)
+        translated_german_text.grid(row=7, column=0, padx=10, pady=(0, 10), sticky=tk.W)"""
+
+
+
+
+
+"""def contar_caracteres(event=None):
+    # Função para contar caracteres
+    texto = text_input.get("1.0", tk.END)
+    char_count = len(texto) - 1  # Subtrair 1 para não contar o caractere de nova linha no final
+    char_counter.config(text=f"Caracteres: {char_count}")"""
+
+
+
+
+#def focus_next_widget(event):
+#    event.widget.tk_focusNext().focus_set()
+#    return "break"
+
+
+
+"""
+
+
+
+
+
+# Checkbox para selecionar idiomas de tradução, após.. >
+# Campos de exibição de traduções
+translate_german = tk.BooleanVar()
+marcador_label = tk.Label(inicial, width=20)
+marcador_label.grid(row=6, column=0)
+checkbox_german = tk.Checkbutton(inicial, variable=translate_german)
+checkbox_german.grid(row=6, column=0, padx=(5,0), pady=10, sticky=tk.SW)
+translate_german_label = tk.Label(inicial, text="Alemão:", wraplength=280)
+translate_german_label.grid(row=6, column=0, padx=(25,0), pady=2, sticky=tk.W)
+translate_german_text = tk.Label(inicial, wraplength=280)
+translate_german_text.grid(row=7, column=0, padx=(5,0), pady=2, sticky=tk.W)
+
+
+#francês
+translate_french = tk.BooleanVar()
+marcador_label = tk.Label(inicial, width=20)
+marcador_label.grid(row=6, column=1)
+checkbox_french = tk.Checkbutton(inicial, variable=translate_french)
+checkbox_french.grid(row=6, column=1, padx=(5,0), pady=10, sticky=tk.SW)
+translate_french_label = tk.Label(inicial, text="Francês:")
+translate_french_label.grid(row=6, column=1, padx=(25,0), pady=2, sticky=tk.W)
+translate_french_text = tk.Label(inicial, wraplength=280)
+translate_french_text.grid(row=7, column=1, padx=(5,0), pady=2, sticky=tk.W)
+
+#espanhol
+translate_spanish = tk.BooleanVar()
+marcador_label = tk.Label(inicial, width=20)
+marcador_label.grid(row=6, column=2)
+checkbox_spanish = tk.Checkbutton(inicial, variable=translate_spanish)
+checkbox_spanish.grid(row=6, column=2, padx=(5,0), pady=10, sticky=tk.SW)
+translate_spanish_label = tk.Label(inicial, text="Francês:")
+translate_spanish_label.grid(row=6, column=2, padx=(25,0), pady=2, sticky=tk.W)
+translate_spanish_text = tk.Label(inicial, wraplength=280)
+translate_spanish_text.grid(row=7, column=2, padx=(5,0), pady=2, sticky=tk.W)
+
+#italiano
+translate_italian = tk.BooleanVar()
+marcador_label = tk.Label(inicial, width=20)
+marcador_label.grid(row=6, column=3)
+checkbox_italian = tk.Checkbutton(inicial, variable=translate_italian)
+checkbox_italian.grid(row=6, column=3, padx=(5,0), pady=10, sticky=tk.SW)
+translate_italian_label = tk.Label(inicial, text="Francês:")
+translate_italian_label.grid(row=6, column=3, padx=(25,0), pady=2, sticky=tk.W)
+translate_italian_text = tk.Label(inicial, wraplength=280)
+translate_italian_text.grid(row=7, column=3, padx=(5,0), pady=2, sticky=tk.W)"""

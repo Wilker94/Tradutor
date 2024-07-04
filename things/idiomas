@@ -1,0 +1,778 @@
+"""# Filipino (tagalo)
+    dest_language = 'tl'
+    translation = translate_text(input_text, dest_language)
+    translate_tagalog_text.config(text=translation)
+    checkbox_tagalog.grid()
+    translate_tagalog_label.grid()
+    translate_tagalog_text.grid()
+
+# Alemão
+    dest_language = 'de'
+    translation = translate_text(input_text, dest_language)
+    translate_german_text.config(text=translation)
+    checkbox_german.grid()
+    translate_german_label.grid()
+    translate_german_text.grid()
+
+    # Árabe
+    dest_language = 'ar'
+    translation = translate_text(input_text, dest_language)
+    translate_arabic_text.config(text=translation)
+    checkbox_arabic.grid()
+    translate_arabic_label.grid()
+    translate_arabic_text.grid()
+
+    # Bengali
+    dest_language = 'bn'
+    translation = translate_text(input_text, dest_language)
+    translate_bengali_text.config(text=translation)
+    checkbox_bengali.grid()
+    translate_bengali_label.grid()
+    translate_bengali_text.grid()
+
+    # Búlgaro
+    dest_language = 'bg'
+    translation = translate_text(input_text, dest_language)
+    translate_bulgarian_text.config(text=translation)
+    checkbox_bulgarian.grid()
+    translate_bulgarian_label.grid()
+    translate_bulgarian_text.grid()
+
+    # Chinês
+    dest_language = 'zh-TW'
+    translation = translate_text(input_text, dest_language)
+    translate_chinese_text.config(text=translation)
+    checkbox_chinese.grid()
+    translate_chinese_label.grid()
+    translate_chinese_text.grid()
+
+    # Croata
+    dest_language = 'hr'
+    translation = translate_text(input_text, dest_language)
+    translate_croatian_text.config(text=translation)
+    checkbox_croatian.grid()
+    translate_croatian_label.grid()
+    translate_croatian_text.grid()
+
+    # Linha 2
+    # Eslovaco
+    dest_language = 'sk'
+    translation = translate_text(input_text, dest_language)
+    translate_slovak_text.config(text=translation)
+    checkbox_slovak.grid()
+    translate_slovak_label.grid()
+    translate_slovak_text.grid()
+
+    # Esloveno
+    dest_language = 'sl'
+    translation = translate_text(input_text, dest_language)
+    translate_slovenian_text.config(text=translation)
+    checkbox_slovenian.grid()
+    translate_slovenian_label.grid()
+    translate_slovenian_text.grid()
+
+
+    # Grego
+    dest_language = 'el'
+    translation = translate_text(input_text, dest_language)
+    translate_greek_text.config(text=translation)
+    checkbox_greek.grid()
+    translate_greek_label.grid()
+    translate_greek_text.grid()
+
+    # Linha 3
+    # Hebraico
+    dest_language = 'he'
+    translation = translate_text(input_text, dest_language)
+    translate_hebrew_text.config(text=translation)
+    checkbox_hebrew.grid()
+    translate_hebrew_label.grid()
+    translate_hebrew_text.grid()
+
+    # Híndi
+    dest_language = 'hi'
+    translation = translate_text(input_text, dest_language)
+    translate_hindi_text.config(text=translation)
+    checkbox_hindi.grid()
+    translate_hindi_label.grid()
+    translate_hindi_text.grid()
+
+    # Húngaro
+    dest_language = 'hu'
+    translation = translate_text(input_text, dest_language)
+    translate_hungarian_text.config(text=translation)
+    checkbox_hungarian.grid()
+    translate_hungarian_label.grid()
+    translate_hungarian_text.grid()
+
+    # Holandês
+    dest_language = 'nl'
+    translation = translate_text(input_text, dest_language)
+    translate_dutch_text.config(text=translation)
+    checkbox_dutch.grid()
+    translate_dutch_label.grid()
+    translate_dutch_text.grid()
+
+    # Indonésio
+    dest_language = 'id'
+    translation = translate_text(input_text, dest_language)
+    translate_indonesian_text.config(text=translation)
+    checkbox_indonesian.grid()
+    translate_indonesian_label.grid()
+    translate_indonesian_text.grid()
+
+    # Inglês
+    dest_language = 'en'
+    translation = translate_text(input_text, dest_language)
+    translate_english_text.config(text=translation)
+    checkbox_english.grid()
+    translate_english_label.grid()
+    translate_english_text.grid()
+
+    # Linha 4
+    # Italiano
+    dest_language = 'it'
+    translation = translate_text(input_text, dest_language)
+    translate_italian_text.config(text=translation)
+    checkbox_italian.grid()
+    translate_italian_label.grid()
+    translate_italian_text.grid()
+
+    # Lituano
+    dest_language = 'lt'
+    translation = translate_text(input_text, dest_language)
+    translate_lithuanian_text.config(text=translation)
+    checkbox_lithuanian.grid()
+    translate_lithuanian_label.grid()
+    translate_lithuanian_text.grid()
+
+    # Malaio
+    dest_language = 'ms'
+    translation = translate_text(input_text, dest_language)
+    translate_malay_text.config(text=translation)
+    checkbox_malay.grid()
+    translate_malay_label.grid()
+    translate_malay_text.grid()
+
+    # Polonês
+    dest_language = 'pl'
+    translation = translate_text(input_text, dest_language)
+    translate_polish_text.config(text=translation)
+    checkbox_polish.grid()
+    translate_polish_label.grid()
+    translate_polish_text.grid()
+
+    # Português
+    dest_language = 'pt'
+    translation = translate_text(input_text, dest_language)
+    translate_portuguese_text.config(text=translation)
+    checkbox_portuguese.grid()
+    translate_portuguese_label.grid()
+    translate_portuguese_text.grid()
+
+    # Romeno
+    dest_language = 'ro'
+    translation = translate_text(input_text, dest_language)
+    translate_romanian_text.config(text=translation)
+    checkbox_romanian.grid()
+    translate_romanian_label.grid()
+    translate_romanian_text.grid()
+
+    # Linha 5
+    # Russo
+    dest_language = 'ru'
+    translation = translate_text(input_text, dest_language)
+    translate_russian_text.config(text=translation)
+    checkbox_russian.grid()
+    translate_russian_label.grid()
+    translate_russian_text.grid()
+
+    # Sérvio
+    dest_language = 'sr'
+    translation = translate_text(input_text, dest_language)
+    translate_serbian_text.config(text=translation)
+    checkbox_serbian.grid()
+    translate_serbian_label.grid()
+    translate_serbian_text.grid()
+
+    # Sueco
+    dest_language = 'sv'
+    translation = translate_text(input_text, dest_language)
+    translate_swedish_text.config(text=translation)
+    checkbox_swedish.grid()
+    translate_swedish_label.grid()
+    translate_swedish_text.grid()
+
+    # Tailandês
+    dest_language = 'th'
+    translation = translate_text(input_text, dest_language)
+    translate_thai_text.config(text=translation)
+    checkbox_thai.grid()
+    translate_thai_label.grid()
+    translate_thai_text.grid()
+
+    # Tcheco (checa)
+    dest_language = 'cs'
+    translation = translate_text(input_text, dest_language)
+    translate_czech_text.config(text=translation)
+    checkbox_czech.grid()
+    translate_czech_label.grid()
+    translate_czech_text.grid()
+
+    # Turco
+    dest_language = 'tr'
+    translation = translate_text(input_text, dest_language)
+    translate_turkish_text.config(text=translation)
+    checkbox_turkish.grid()
+    translate_turkish_label.grid()
+    translate_turkish_text.grid()
+
+    # Linha 6
+    # Ucraniano
+    dest_language = 'uk'
+    translation = translate_text(input_text, dest_language)
+    translate_ukrainian_text.config(text=translation)
+    checkbox_ukrainian.grid()
+    translate_ukrainian_label.grid()
+    translate_ukrainian_text.grid()
+
+    # Urdu
+    dest_language = 'ur'
+    translation = translate_text(input_text, dest_language)
+    translate_urdu_text.config(text=translation)
+    checkbox_urdu.grid()
+    translate_urdu_label.grid()
+    translate_urdu_text.grid()
+
+    # Vietnamita
+    dest_language = 'vi'
+    translation = translate_text(input_text, dest_language)
+    translate_vietnamese_text.config(text=translation)
+    checkbox_vietnamese.grid()
+    translate_vietnamese_label.grid()
+    translate_vietnamese_text.grid()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TRADUÇÕES
+# Linha 1
+# Alemão
+translate_german = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=6, column=0)
+checkbox_german = tk.Checkbutton(inicial, variable=translate_german)
+checkbox_german.grid(row=6, column=0, padx=(5,0), pady=10, sticky=tk.SW)
+translate_german_label = tk.Label(inicial, text="Alemão:", wraplength=280)
+translate_german_label.grid(row=6, column=0, padx=(25,0), pady=2, sticky=tk.W)
+translate_german_text = tk.Label(inicial, wraplength=280)
+translate_german_text.grid(row=7, column=0, padx=(5,0), pady=2, sticky=tk.W)
+
+# Árabe
+translate_arabic = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=6, column=0)
+checkbox_arabic = tk.Checkbutton(inicial, variable=translate_arabic)
+checkbox_arabic.grid(row=6, column=1, padx=(5,0), pady=10, sticky=tk.SW)
+translate_arabic_label = tk.Label(inicial, text="Árabe:", wraplength=280)
+translate_arabic_label.grid(row=6, column=1, padx=(25,0), pady=2, sticky=tk.W)
+translate_arabic_text = tk.Label(inicial, wraplength=280)
+translate_arabic_text.grid(row=7, column=1, padx=(5,0), pady=2, sticky=tk.W)
+
+# Bengali
+translate_bengali = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=6, column=0)
+checkbox_bengali = tk.Checkbutton(inicial, variable=translate_bengali)
+checkbox_bengali.grid(row=6, column=2, padx=(5,0), pady=10, sticky=tk.SW)
+translate_bengali_label = tk.Label(inicial, text="Bengali:", wraplength=280)
+translate_bengali_label.grid(row=6, column=2, padx=(25,0), pady=2, sticky=tk.W)
+translate_bengali_text = tk.Label(inicial, wraplength=280)
+translate_bengali_text.grid(row=7, column=2, padx=(5,0), pady=2, sticky=tk.W)
+
+# Búlgaro
+translate_bulgarian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=6, column=0)
+checkbox_bulgarian = tk.Checkbutton(inicial, variable=translate_bulgarian)
+checkbox_bulgarian.grid(row=6, column=3, padx=(5,0), pady=10, sticky=tk.SW)
+translate_bulgarian_label = tk.Label(inicial, text="Búlgaro:", wraplength=280)
+translate_bulgarian_label.grid(row=6, column=3, padx=(25,0), pady=2, sticky=tk.W)
+translate_bulgarian_text = tk.Label(inicial, wraplength=280)
+translate_bulgarian_text.grid(row=7, column=3, padx=(5,0), pady=2, sticky=tk.W)
+
+# Chinês
+translate_chinese = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=6, column=0)
+checkbox_chinese = tk.Checkbutton(inicial, variable=translate_chinese)
+checkbox_chinese.grid(row=6, column=4, padx=(5,0), pady=10, sticky=tk.SW)
+translate_chinese_label = tk.Label(inicial, text="Chinês:", wraplength=280)
+translate_chinese_label.grid(row=6, column=4, padx=(25,0), pady=2, sticky=tk.W)
+translate_chinese_text = tk.Label(inicial, wraplength=280)
+translate_chinese_text.grid(row=7, column=4, padx=(5,0), pady=2, sticky=tk.W)
+
+# Croata
+translate_croatian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=6, column=0)
+checkbox_croatian = tk.Checkbutton(inicial, variable=translate_croatian)
+checkbox_croatian.grid(row=6, column=5, padx=(5,0), pady=10, sticky=tk.SW)
+translate_croatian_label = tk.Label(inicial, text="Croata:", wraplength=280)
+translate_croatian_label.grid(row=6, column=5, padx=(25,0), pady=2, sticky=tk.W)
+translate_croatian_text = tk.Label(inicial, wraplength=280)
+translate_croatian_text.grid(row=7, column=5, padx=(5,0), pady=2, sticky=tk.W)
+
+
+
+# Linha 2
+# Eslovaco
+translate_slovak = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=8, column=0)
+checkbox_slovak = tk.Checkbutton(inicial, variable=translate_slovak)
+checkbox_slovak.grid(row=8, column=0, padx=(5,0), pady=10, sticky=tk.SW)
+translate_slovak_label = tk.Label(inicial, text="Eslovaco:", wraplength=280)
+translate_slovak_label.grid(row=8, column=0, padx=(25,0), pady=2, sticky=tk.W)
+translate_slovak_text = tk.Label(inicial, wraplength=280)
+translate_slovak_text.grid(row=9, column=0, padx=(5,0), pady=2, sticky=tk.W)
+
+# Esloveno
+translate_slovenian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=8, column=0)
+checkbox_slovenian = tk.Checkbutton(inicial, variable=translate_slovenian)
+checkbox_slovenian.grid(row=8, column=1, padx=(5,0), pady=10, sticky=tk.SW)
+translate_slovenian_label = tk.Label(inicial, text="Esloveno:", wraplength=280)
+translate_slovenian_label.grid(row=8, column=1, padx=(25,0), pady=2, sticky=tk.W)
+translate_slovenian_text = tk.Label(inicial, wraplength=280)
+translate_slovenian_text.grid(row=9, column=1, padx=(5,0), pady=2, sticky=tk.W)
+
+# Filipino (tagalo)
+translate_tagalog = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=8, column=0)
+checkbox_tagalog = tk.Checkbutton(inicial, variable=translate_tagalog)
+checkbox_tagalog.grid(row=8, column=3, padx=(5,0), pady=10, sticky=tk.SW)
+translate_tagalog_label = tk.Label(inicial, text="Filipino (tagalo):", wraplength=280)
+translate_tagalog_label.grid(row=8, column=3, padx=(25,0), pady=2, sticky=tk.W)
+translate_tagalog_text = tk.Label(inicial, wraplength=280)
+translate_tagalog_text.grid(row=9, column=3, padx=(5,0), pady=2, sticky=tk.W)
+
+
+# Grego
+translate_greek = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=8, column=0)
+checkbox_greek = tk.Checkbutton(inicial, variable=translate_greek)
+checkbox_greek.grid(row=8, column=5, padx=(5,0), pady=10, sticky=tk.SW)
+translate_greek_label = tk.Label(inicial, text="Grego:", wraplength=280)
+translate_greek_label.grid(row=8, column=5, padx=(25,0), pady=2, sticky=tk.W)
+translate_greek_text = tk.Label(inicial, wraplength=280)
+translate_greek_text.grid(row=9, column=5, padx=(5,0), pady=2, sticky=tk.W)
+
+
+
+# Linha 3
+# Hebraico
+translate_hebrew = tk.BooleanVar()
+checkbox_hebrew = tk.Checkbutton(inicial, variable=translate_hebrew)
+checkbox_hebrew.grid(row=10, column=0, padx=(5,0), pady=10, sticky=tk.SW)
+translate_hebrew_label = tk.Label(inicial, text="Hebraico:", wraplength=280)
+translate_hebrew_label.grid(row=10, column=0, padx=(25,0), pady=2, sticky=tk.W)
+translate_hebrew_text = tk.Label(inicial, wraplength=280)
+translate_hebrew_text.grid(row=11, column=0, padx=(5,0), pady=2, sticky=tk.W)
+
+# Híndi
+translate_hindi = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=10, column=0)
+checkbox_hindi = tk.Checkbutton(inicial, variable=translate_hindi)
+checkbox_hindi.grid(row=10, column=1, padx=(5,0), pady=10, sticky=tk.SW)
+translate_hindi_label = tk.Label(inicial, text="Híndi:", wraplength=280)
+translate_hindi_label.grid(row=10, column=1, padx=(25,0), pady=2, sticky=tk.W)
+translate_hindi_text = tk.Label(inicial, wraplength=280)
+translate_hindi_text.grid(row=11, column=1, padx=(5,0), pady=2, sticky=tk.W)
+
+# Húngaro
+translate_hungarian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=10, column=0)
+checkbox_hungarian = tk.Checkbutton(inicial, variable=translate_hungarian)
+checkbox_hungarian.grid(row=10, column=2, padx=(5,0), pady=10, sticky=tk.SW)
+translate_hungarian_label = tk.Label(inicial, text="Húngaro:", wraplength=280)
+translate_hungarian_label.grid(row=10, column=2, padx=(25,0), pady=2, sticky=tk.W)
+translate_hungarian_text = tk.Label(inicial, wraplength=280)
+translate_hungarian_text.grid(row=11, column=2, padx=(5,0), pady=2, sticky=tk.W)
+
+# Holandês
+translate_dutch = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=10, column=0)
+checkbox_dutch = tk.Checkbutton(inicial, variable=translate_dutch)
+checkbox_dutch.grid(row=10, column=3, padx=(5,0), pady=10, sticky=tk.SW)
+translate_dutch_label = tk.Label(inicial, text="Holandês:", wraplength=280)
+translate_dutch_label.grid(row=10, column=3, padx=(25,0), pady=2, sticky=tk.W)
+translate_dutch_text = tk.Label(inicial, wraplength=280)
+translate_dutch_text.grid(row=11, column=3, padx=(5,0), pady=2, sticky=tk.W)
+
+# Indonésio
+translate_indonesian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=10, column=0)
+checkbox_indonesian = tk.Checkbutton(inicial, variable=translate_indonesian)
+checkbox_indonesian.grid(row=10, column=4, padx=(5,0), pady=10, sticky=tk.SW)
+translate_indonesian_label = tk.Label(inicial, text="Indonésio:", wraplength=280)
+translate_indonesian_label.grid(row=10, column=4, padx=(25,0), pady=2, sticky=tk.W)
+translate_indonesian_text = tk.Label(inicial, wraplength=280)
+translate_indonesian_text.grid(row=11, column=4, padx=(5,0), pady=2, sticky=tk.W)
+
+# Inglês
+translate_english = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=10, column=0)
+checkbox_english = tk.Checkbutton(inicial, variable=translate_english)
+checkbox_english.grid(row=10, column=5, padx=(5,0), pady=10, sticky=tk.SW)
+translate_english_label = tk.Label(inicial, text="Inglês:", wraplength=280)
+translate_english_label.grid(row=10, column=5, padx=(25,0), pady=2, sticky=tk.W)
+translate_english_text = tk.Label(inicial, wraplength=280)
+translate_english_text.grid(row=11, column=5, padx=(5,0), pady=2, sticky=tk.W)
+
+# Linha 4
+# Italiano
+translate_italian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=12, column=0)
+checkbox_italian = tk.Checkbutton(inicial, variable=translate_italian)
+checkbox_italian.grid(row=12, column=0, padx=(5,0), pady=10, sticky=tk.SW)
+translate_italian_label = tk.Label(inicial, text="Italiano:", wraplength=280)
+translate_italian_label.grid(row=12, column=0, padx=(25,0), pady=2, sticky=tk.W)
+translate_italian_text = tk.Label(inicial, wraplength=280)
+translate_italian_text.grid(row=13, column=0, padx=(5,0), pady=2, sticky=tk.W)
+
+# Lituano
+translate_lithuanian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=12, column=0)
+checkbox_lithuanian = tk.Checkbutton(inicial, variable=translate_lithuanian)
+checkbox_lithuanian.grid(row=12, column=1, padx=(5,0), pady=10, sticky=tk.SW)
+translate_lithuanian_label = tk.Label(inicial, text="Lituano:", wraplength=280)
+translate_lithuanian_label.grid(row=12, column=1, padx=(25,0), pady=2, sticky=tk.W)
+translate_lithuanian_text = tk.Label(inicial, wraplength=280)
+translate_lithuanian_text.grid(row=13, column=1, padx=(5,0), pady=2, sticky=tk.W)
+
+# Malaio
+translate_malay = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=12, column=0)
+checkbox_malay = tk.Checkbutton(inicial, variable=translate_malay)
+checkbox_malay.grid(row=12, column=2, padx=(5,0), pady=10, sticky=tk.SW)
+translate_malay_label = tk.Label(inicial, text="Malaio:", wraplength=280)
+translate_malay_label.grid(row=12, column=2, padx=(25,0), pady=2, sticky=tk.W)
+translate_malay_text = tk.Label(inicial, wraplength=280)
+translate_malay_text.grid(row=13, column=2, padx=(5,0), pady=2, sticky=tk.W)
+
+# Polonês
+translate_polish = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=12, column=0)
+checkbox_polish = tk.Checkbutton(inicial, variable=translate_polish)
+checkbox_polish.grid(row=12, column=3, padx=(5,0), pady=10, sticky=tk.SW)
+translate_polish_label = tk.Label(inicial, text="Polonês:", wraplength=280)
+translate_polish_label.grid(row=12, column=3, padx=(25,0), pady=2, sticky=tk.W)
+translate_polish_text = tk.Label(inicial, wraplength=280)
+translate_polish_text.grid(row=13, column=3, padx=(5,0), pady=2, sticky=tk.W)
+
+
+
+# Romeno
+translate_romanian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=12, column=0)
+checkbox_romanian = tk.Checkbutton(inicial, variable=translate_romanian)
+checkbox_romanian.grid(row=12, column=5, padx=(5,0), pady=10, sticky=tk.SW)
+translate_romanian_label = tk.Label(inicial, text="Romeno:", wraplength=280)
+translate_romanian_label.grid(row=12, column=5, padx=(25,0), pady=2, sticky=tk.W)
+translate_romanian_text = tk.Label(inicial, wraplength=280)
+translate_romanian_text.grid(row=13, column=5, padx=(5,0), pady=2, sticky=tk.W)
+
+# Linha 5
+# Russo
+translate_russian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=14, column=0)
+checkbox_russian = tk.Checkbutton(inicial, variable=translate_russian)
+checkbox_russian.grid(row=14, column=0, padx=(5,0), pady=10, sticky=tk.SW)
+translate_russian_label = tk.Label(inicial, text="Russo:", wraplength=280)
+translate_russian_label.grid(row=14, column=0, padx=(25,0), pady=2, sticky=tk.W)
+translate_russian_text = tk.Label(inicial, wraplength=280)
+translate_russian_text.grid(row=15, column=0, padx=(5,0), pady=2, sticky=tk.W)
+
+# Sérvio
+translate_serbian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=14, column=0)
+checkbox_serbian = tk.Checkbutton(inicial, variable=translate_serbian)
+checkbox_serbian.grid(row=14, column=1, padx=(5,0), pady=10, sticky=tk.SW)
+translate_serbian_label = tk.Label(inicial, text="Sérvio:", wraplength=280)
+translate_serbian_label.grid(row=14, column=1, padx=(25,0), pady=2, sticky=tk.W)
+translate_serbian_text = tk.Label(inicial, wraplength=280)
+translate_serbian_text.grid(row=15, column=1, padx=(5,0), pady=2, sticky=tk.W)
+
+# Sueco
+translate_swedish = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=14, column=0)
+checkbox_swedish = tk.Checkbutton(inicial, variable=translate_swedish)
+checkbox_swedish.grid(row=14, column=2, padx=(5,0), pady=10, sticky=tk.SW)
+translate_swedish_label = tk.Label(inicial, text="Sueco:", wraplength=280)
+translate_swedish_label.grid(row=14, column=2, padx=(25,0), pady=2, sticky=tk.W)
+translate_swedish_text = tk.Label(inicial, wraplength=280)
+translate_swedish_text.grid(row=15, column=2, padx=(5,0), pady=2, sticky=tk.W)
+
+# Tailandês
+translate_thai = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=14, column=0)
+checkbox_thai = tk.Checkbutton(inicial, variable=translate_thai)
+checkbox_thai.grid(row=14, column=3, padx=(5,0), pady=10, sticky=tk.SW)
+translate_thai_label = tk.Label(inicial, text="Tailandês:", wraplength=280)
+translate_thai_label.grid(row=14, column=3, padx=(25,0), pady=2, sticky=tk.W)
+translate_thai_text = tk.Label(inicial, wraplength=280)
+translate_thai_text.grid(row=15, column=3, padx=(5,0), pady=2, sticky=tk.W)
+
+# Tcheco (checa)
+translate_czech = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=14, column=0)
+checkbox_czech = tk.Checkbutton(inicial, variable=translate_czech)
+checkbox_czech.grid(row=14, column=4, padx=(5,0), pady=10, sticky=tk.SW)
+translate_czech_label = tk.Label(inicial, text="Tcheco (checa):", wraplength=280)
+translate_czech_label.grid(row=14, column=4, padx=(25,0), pady=2, sticky=tk.W)
+translate_czech_text = tk.Label(inicial, wraplength=280)
+translate_czech_text.grid(row=15, column=4, padx=(5,0), pady=2, sticky=tk.W)
+
+# Turco
+translate_turkish = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=14, column=0)
+checkbox_turkish = tk.Checkbutton(inicial, variable=translate_turkish)
+checkbox_turkish.grid(row=14, column=5, padx=(5,0), pady=10, sticky=tk.SW)
+translate_turkish_label = tk.Label(inicial, text="Turco:", wraplength=280)
+translate_turkish_label.grid(row=14, column=5, padx=(25,0), pady=2, sticky=tk.W)
+translate_turkish_text = tk.Label(inicial, wraplength=280)
+translate_turkish_text.grid(row=15, column=5, padx=(5,0), pady=2, sticky=tk.W)
+
+# Linha 6
+# Ucraniano
+translate_ukrainian = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=16, column=0)
+checkbox_ukrainian = tk.Checkbutton(inicial, variable=translate_ukrainian)
+checkbox_ukrainian.grid(row=16, column=0, padx=(5,0), pady=10, sticky=tk.SW)
+translate_ukrainian_label = tk.Label(inicial, text="Ucraniano:", wraplength=280)
+translate_ukrainian_label.grid(row=16, column=0, padx=(25,0), pady=2, sticky=tk.W)
+translate_ukrainian_text = tk.Label(inicial, wraplength=280)
+translate_ukrainian_text.grid(row=17, column=0, padx=(5,0), pady=2, sticky=tk.W)
+
+# Urdu
+translate_urdu = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=16, column=0)
+checkbox_urdu = tk.Checkbutton(inicial, variable=translate_urdu)
+checkbox_urdu.grid(row=16, column=1, padx=(5,0), pady=10, sticky=tk.SW)
+translate_urdu_label = tk.Label(inicial, text="Urdu:", wraplength=280)
+translate_urdu_label.grid(row=16, column=1, padx=(25,0), pady=2, sticky=tk.W)
+translate_urdu_text = tk.Label(inicial, wraplength=280)
+translate_urdu_text.grid(row=17, column=1, padx=(5,0), pady=2, sticky=tk.W)
+
+# Vietnamita
+translate_vietnamese = tk.BooleanVar()
+marcador = tk.Label(inicial, width=25)
+marcador.grid(row=16, column=0)
+checkbox_vietnamese = tk.Checkbutton(inicial, variable=translate_vietnamese)
+checkbox_vietnamese.grid(row=16, column=2, padx=(5,0), pady=10, sticky=tk.SW)
+translate_vietnamese_label = tk.Label(inicial, text="Vietnamita:", wraplength=280)
+translate_vietnamese_label.grid(row=16, column=2, padx=(25,0), pady=2, sticky=tk.W)
+translate_vietnamese_text = tk.Label(inicial, wraplength=280)
+translate_vietnamese_text.grid(row=17, column=2, padx=(5,0), pady=2, sticky=tk.W)
+
+
+
+
+
+
+
+# Filipino (tagalo)
+checkbox_tagalog.grid_remove()
+translate_tagalog_label.grid_remove()
+translate_tagalog_text.grid_remove()
+
+
+# Inicialmente remover os widgets de tradução
+# Alemão
+checkbox_german.grid_remove()
+translate_german_label.grid_remove()
+translate_german_text.grid_remove()
+
+# Árabe
+checkbox_arabic.grid_remove()
+translate_arabic_label.grid_remove()
+translate_arabic_text.grid_remove()
+
+# Bengali
+checkbox_bengali.grid_remove()
+translate_bengali_label.grid_remove()
+translate_bengali_text.grid_remove()
+
+# Búlgaro
+checkbox_bulgarian.grid_remove()
+translate_bulgarian_label.grid_remove()
+translate_bulgarian_text.grid_remove()
+
+# Chinês
+checkbox_chinese.grid_remove()
+translate_chinese_label.grid_remove()
+translate_chinese_text.grid_remove()
+
+# Croata
+checkbox_croatian.grid_remove()
+translate_croatian_label.grid_remove()
+translate_croatian_text.grid_remove()
+
+# Linha 2
+# Eslovaco
+checkbox_slovak.grid_remove()
+translate_slovak_label.grid_remove()
+translate_slovak_text.grid_remove()
+
+# Esloveno
+checkbox_slovenian.grid_remove()
+translate_slovenian_label.grid_remove()
+translate_slovenian_text.grid_remove()
+
+# Grego
+checkbox_greek.grid_remove()
+translate_greek_label.grid_remove()
+translate_greek_text.grid_remove()
+
+# Linha 3
+# Hebraico
+checkbox_hebrew.grid_remove()
+translate_hebrew_label.grid_remove()
+translate_hebrew_text.grid_remove()
+
+# Híndi
+checkbox_hindi.grid_remove()
+translate_hindi_label.grid_remove()
+translate_hindi_text.grid_remove()
+
+# Húngaro
+checkbox_hungarian.grid_remove()
+translate_hungarian_label.grid_remove()
+translate_hungarian_text.grid_remove()
+
+# Holandês
+checkbox_dutch.grid_remove()
+translate_dutch_label.grid_remove()
+translate_dutch_text.grid_remove()
+
+# Indonésio
+checkbox_indonesian.grid_remove()
+translate_indonesian_label.grid_remove()
+translate_indonesian_text.grid_remove()
+
+# Inglês
+checkbox_english.grid_remove()
+translate_english_label.grid_remove()
+translate_english_text.grid_remove()
+
+# Linha 4
+# Italiano
+checkbox_italian.grid_remove()
+translate_italian_label.grid_remove()
+translate_italian_text.grid_remove()
+
+# Lituano
+checkbox_lithuanian.grid_remove()
+translate_lithuanian_label.grid_remove()
+translate_lithuanian_text.grid_remove()
+
+# Malaio
+checkbox_malay.grid_remove()
+translate_malay_label.grid_remove()
+translate_malay_text.grid_remove()
+
+# Polonês
+checkbox_polish.grid_remove()
+translate_polish_label.grid_remove()
+translate_polish_text.grid_remove()
+
+# Romeno
+checkbox_romanian.grid_remove()
+translate_romanian_label.grid_remove()
+translate_romanian_text.grid_remove()
+
+# Linha 5
+# Russo
+checkbox_russian.grid_remove()
+translate_russian_label.grid_remove()
+translate_russian_text.grid_remove()
+
+# Sérvio
+checkbox_serbian.grid_remove()
+translate_serbian_label.grid_remove()
+translate_serbian_text.grid_remove()
+
+# Sueco
+checkbox_swedish.grid_remove()
+translate_swedish_label.grid_remove()
+translate_swedish_text.grid_remove()
+
+# Tailandês
+checkbox_thai.grid_remove()
+translate_thai_label.grid_remove()
+translate_thai_text.grid_remove()
+
+# Tcheco (checa)
+checkbox_czech.grid_remove()
+translate_czech_label.grid_remove()
+translate_czech_text.grid_remove()
+
+# Turco
+checkbox_turkish.grid_remove()
+translate_turkish_label.grid_remove()
+translate_turkish_text.grid_remove()
+
+# Linha 6
+# Ucraniano
+checkbox_ukrainian.grid_remove()
+translate_ukrainian_label.grid_remove()
+translate_ukrainian_text.grid_remove()
+
+# Urdu
+checkbox_urdu.grid_remove()
+translate_urdu_label.grid_remove()
+translate_urdu_text.grid_remove()
+
+# Vietnamita
+checkbox_vietnamese.grid_remove()
+translate_vietnamese_label.grid_remove()
+translate_vietnamese_text.grid_remove()"""
