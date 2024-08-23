@@ -5,6 +5,7 @@ from translate import traduz_texto  # Importa a função do arquivo translate.py
 from vincula_eleven_api import get_eleven
 from contador_checkbox import checkbox_selecionada
 from config_system import config_gerais 
+from previa import previa_voz
 
 
 #Wonka1 be00df312290494f3d432b0af6f9bc6c
@@ -84,9 +85,15 @@ def telas (tela):
         # Titulo da solicitação de texto
         texto_traducao = tk.Label(frame_campos, text="Digite o texto que deseja traduzir:")
         texto_traducao.grid(row=0, column=2, padx=(10,0), pady=0, sticky=tk.W)
+        
         #Input
         texto_traducao_input = scrolledtext.ScrolledText(frame_campos, width=82, height=2)
         texto_traducao_input.grid(row=1, column=2, padx=(10,0), pady=0, sticky=tk.W)
+        
+        """previa_button = tk.Button(frame_campos, text="Prévia", width=7, command=lambda: previa_voz(api_input,texto_traducao_input))
+        previa_button.grid(row=1, column=3, padx=15, pady=2, sticky=tk.E)"""
+        
+        
 
         def botoes ():
         
@@ -109,46 +116,7 @@ def telas (tela):
                  checkbox_urdu, translate_urdu_label, translate_urdu_text, checkbox_hindi, translate_hindi_label, translate_hindi_text, checkbox_hebraico, 
                  translate_hebraico_label, translate_hebraico_text, checkbox_chines, translate_chines_label, translate_chines_text))
             translate_button.grid(row=2, column=2, padx=15, pady=2, sticky=tk.E)
-          
-            #Botão Baixar Audio
-            """translate_button = tk.Button(frame_campos, text="Baixar Áudios", height=3, command=lambda: baixa_audio(api_input, 
-                                        translate_portugues, translate_portugues_text, translate_portugues_label,
-                                        translate_ingles, translate_ingles_text, translate_ingles_label,
-                                        translate_espanhol, translate_espanhol_text, translate_espanhol_label,
-                                        translate_alemao, translate_alemao_text, translate_alemao_label,
-                                        translate_frances, translate_frances_text, translate_frances_label,
-                                        translate_italiano, translate_italiano_text, translate_italiano_label,
-                                        translate_arabe, translate_arabe_text, translate_arabe_label,
-                                        translate_holandes, translate_holandes_text, translate_holandes_label,
-                                        translate_polones, translate_polones_text, translate_polones_label,
-                                        translate_bulgaro, translate_bulgaro_text, translate_bulgaro_label,
-                                        translate_croata, translate_croata_text, translate_croata_label,
-                                        translate_esloveno, translate_esloveno_text, translate_esloveno_label,
-                                        translate_eslovaco, translate_eslovaco_text, translate_eslovaco_label,
-                                        translate_filipino, translate_filipino_text, translate_filipino_label,
-                                        translate_grego, translate_grego_text, translate_grego_label,
-                                        translate_urdu, translate_urdu_text, translate_urdu_label,
-                                        translate_lituano, translate_lituano_text, translate_lituano_label,
-                                        translate_tailandes, translate_tailandes_text, translate_tailandes_label,
-                                        translate_hindi, translate_hindi_text, translate_hindi_label,
-                                        translate_vietnam, translate_vietnam_text, translate_vietnam_label,
-                                        translate_bengali, translate_bengali_text, translate_bengali_label,
-                                        translate_hungaro, translate_hungaro_text, translate_hungaro_label,
-                                        translate_indonesio, translate_indonesio_text, translate_indonesio_label,
-                                        translate_sueco, translate_sueco_text, translate_sueco_label,
-                                        translate_servio, translate_servio_text, translate_servio_label,
-                                        translate_tcheco, translate_tcheco_text, translate_tcheco_label,
-                                        translate_romeno, translate_romeno_text, translate_romeno_label,
-                                        translate_turco, translate_turco_text, translate_turco_label,
-                                        translate_russo, translate_russo_text, translate_russo_label,
-                                        translate_ucraniano, translate_ucraniano_text, translate_ucraniano_label,
-                                        translate_malaio, translate_malaio_text, translate_malaio_label,
-                                        translate_hebraico, translate_hebraico_text, translate_hebraico_label, 
-                                        translate_chines, translate_chines_text, translate_chines_label))
-            translate_button.grid(row=0, rowspan=3, column=3, padx=(20,0), pady=2)"""
-        
-
-        
+                 
         botoes()
                
     def idiomas_traduzidos():
@@ -982,6 +950,9 @@ def telas (tela):
                                         translate_hebraico, translate_hebraico_text, translate_hebraico_label, 
                                         translate_chines, translate_chines_text, translate_chines_label))
         translate_button.grid(row=0,  column=3, padx=(20,0), pady=2)
+        
+        """previa_audio = tk.Label(frame_rodape, text="AUSHUISHIUHSUIAH")
+        previa_audio.grid(row=0, column=0, columnspan=3, padx=0, pady=0)"""
         
     topo()
     inputs_user()    

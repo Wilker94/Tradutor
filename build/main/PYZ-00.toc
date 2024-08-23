@@ -2066,6 +2066,7 @@
   ('pprint',
    'C:\\Users\\Wonka\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pprint.py',
    'PYMODULE'),
+  ('previa', 'C:\\Users\\Wonka\\Desktop\\Tradutor\\previa.py', 'PYMODULE'),
   ('py_compile',
    'C:\\Users\\Wonka\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\py_compile.py',
    'PYMODULE'),

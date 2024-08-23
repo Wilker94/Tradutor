@@ -5,32 +5,8 @@ from elevenlabs import save, Voice, VoiceSettings
 from elevenlabs.client import *
 import json
 
-with open('config.json', 'r') as file:
-    #json load irá carregar as informações de file, irá converter e armazenar em config
-    config = json.load(file)
-#config.get permite puxar alguma info do arquivo. Nesse caso, o nome
 
-
-# be00df312290494f3d432b0af6f9bc6c
-
-
-# Função para converter texto para áudio utilizando Eleven Labs e salvar no desktop
-
-
-
-voice_system = config.get('default_name')
-stability_system = config.get('stability')
-similarity_system = config.get('similarity_boost')
-style_system = config.get('style')
-boost_system = config.get('boost')
-
-def eleven(api, texto, save_filename):
-    
-    voice_name=voice_system
-    stability = stability_system
-    similarity_boost = similarity_system
-    style = style_system
-    boost = boost_system
+def eleven(api, texto, save_filename, voice_system, stability_system, similarity_system, style_system, boost_system ):
     
     
     if not api:
@@ -46,12 +22,12 @@ def eleven(api, texto, save_filename):
     voice = None
     voices = client.voices.get_all()
     for voz in voices.voices:
-        if voice_name in voz.name:
+        if voice_system in voz.name:
             voice = voz.voice_id
             break
 
     if not voice:
-        print(f"Voz '{voice_name}' não encontrada.")
+        print(f"Voz '{voice_system}' não encontrada.")
         return
  
     """
@@ -71,10 +47,10 @@ def eleven(api, texto, save_filename):
     audio = client.generate(
         text=texto,
         voice=Voice(voice_id=voice,
-                    settings=VoiceSettings(stability=stability,
-                                           similarity_boost=similarity_boost,
-                                           style=style,
-                                           use_speaker_boost=boost)),
+                    settings=VoiceSettings(stability=stability_system,
+                                           similarity_boost=similarity_system,
+                                           style=style_system,
+                                           use_speaker_boost=boost_system)),
         model='eleven_multilingual_v2'
     )
 
@@ -85,7 +61,9 @@ def eleven(api, texto, save_filename):
     filename = os.path.join(audios_folder, save_filename)
 
     save(audio=audio, filename=filename)
+    
     print(f"Áudio salvo com sucesso como {filename}")
+    print(voice_system, stability_system, similarity_system, style_system,boost_system )
     print()
     
     
@@ -96,8 +74,6 @@ def eleven(api, texto, save_filename):
         os.makedirs(idiomas_path)
     return idiomas_path    """
       
-    
-    
 
 # Função para baixar arquivos de áudio com base nos idiomas selecionados
 """def baixar_audio(api, pt):
@@ -189,6 +165,16 @@ def baixa_audio(api_input, translate_portugues, translate_portugues_text, transl
             "Hebraico": (translate_hebraico, translate_hebraico_text, translate_hebraico_label),
             "Chinês": (translate_chines, translate_chines_text, translate_chines_label),
         }
+        
+        with open('config.json', 'r') as file:
+    
+            config = json.load(file)
+
+            voice_system = config.get('default_name')
+            stability_system = config.get('stability')
+            similarity_system = config.get('similarity_boost')
+            style_system = config.get('style')
+            boost_system = config.get('boost')
     
         # Para cada idioma selecionado, verifica se está marcado e, se sim, realiza o download do áudio
         for language in languages_data:
@@ -196,7 +182,7 @@ def baixa_audio(api_input, translate_portugues, translate_portugues_text, transl
             if checkbox and checkbox.get():
                 text_value = text.cget("text")
                 save_filename = label.cget("text").strip() + ".mp3"
-                eleven(api, text_value, save_filename)
+                eleven(api, text_value, save_filename, voice_system,stability_system, similarity_system, style_system, boost_system )
         messagebox.showinfo("Download concluído", "Todos os downloads foram concluídos com sucesso.")
 
            

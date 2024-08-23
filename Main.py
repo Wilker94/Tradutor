@@ -30,10 +30,19 @@ inicial.mainloop()
 #pasta nome arquivo
 #copiar embaixo de texto
 #ctrl z, tab
-#config:
-# voz (pessoa de voz, similaridade)
 #adicionar opcional +1 em final nome caso exista ou substituir
 #Adicionar diretorio em config
+
+
+#pendencias
+#corrigir vozes - check
+#Carregar voz atual em lista - check
+
+
+
+#Inserir local a ser salvo em config
+#Inserir nome da pasta
+#Inserir player pré reprodução
 
 
 #WK 797ccf834e6e157ff1354554b2e93f12
@@ -45,8 +54,19 @@ inicial.mainloop()
 #pip install pyinstaller
 #pyinstaller --onefile --noconsole main.py
 
+####################################
+#parei em pré visualizador de audio
+#arquivos "previa" e "reprodutor_audio"
 
+#Em interface:
+"""previa_button = tk.Button(frame_campos, text="Prévia", width=7, command=lambda: previa_voz(api_input,texto_traducao_input))
+        previa_button.grid(row=1, column=3, padx=15, pady=2, sticky=tk.E)"""
 
+"""previa_audio = tk.Label(frame_rodape, text="AUSHUISHIUHSUIAH")
+        previa_audio.grid(row=0, column=0, columnspan=3, padx=0, pady=0)"""        
+        
+#Os dois são responsaveis por disponibilizar a opção ao user e tb em adicionar o reprodutor no rodapé.
+        
 
 
 
